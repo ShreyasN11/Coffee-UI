@@ -1,0 +1,249 @@
+*{
+    font-family: 'Lumanosimo' , 'Roboto' , 'Poppins' , 'sans-serif';
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    color: white;
+}
+
+.navbar{
+    background-color: black;
+    width: 100%;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 15vh;
+    z-index: 100;
+    top: 0;
+    position: relative;
+
+}
+
+.stick{
+    position: sticky;
+    
+}
+
+.navbar h2{
+    font-weight:700;
+    letter-spacing: 3px;
+    font-size: 25px;
+    font-family: 'Poppins' , 'Lumanosimo' , 'Roboto' , 'sans-serif';
+}
+
+navbar ul{
+    justify-content: center;
+    align-items: center;
+    font-family: 'poppins' , 'roboto';
+    padding: 10px 10px;
+
+}
+
+.navbar ul li{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 10px;
+} 
+
+.navbar ul li a{
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all ease 0.3s;
+}
+
+#active{
+    background-color: white;
+    color:black;
+}
+
+.navbar ul li a:hover{
+    background-color: white;
+    color:black;  
+}   
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.home{
+    min-height: 85vh;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    position: relative;
+}
+
+.home img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.home-holder{
+    z-index: 10;
+    position: absolute;
+    margin-left: 5vw;
+    padding: 10px 10px;
+    margin-top: 5vh;
+}
+
+.home-holder h2{
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.home-holder p{
+    font-style: italic;
+    font-size: 20px;
+}
+
+.home-holder a{
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px 30px;
+    color: black;
+    transition: all ease 0.3s;
+}
+
+.btn-holder{
+    margin-top: 6vh;   
+}
+
+.home-holder a:hover{
+    background-color: black;
+    color: white;
+}
+
+.recipe{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    overflow:hidden;
+}
+
+.recipe-holder img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+
+}
+
+
+.recipe{
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.recipe-content{
+    z-index: 10;
+    position: absolute;
+    margin-left: 5vw;
+    padding: 10px 10px;
+    margin-top: 25vh;
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    width: 30%;
+    border: solid 1px;
+    border-radius: 10px;
+}
+
+.recipe-content h2{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+#beans{
+    background-image: url(assets/Recipe/recipe-1.jpg);
+}
+
+#making{
+    background-image: url(assets/Recipe/bg-1.jpg);
+}
+
+#milk{
+    background-image: url(assets/Recipe/milk-2.jpg);
+}
+
+#mix{
+    background-image: url(assets/Recipe/mix1.jpg);
+}
+
+#voila{
+    background-image: url(assets/Recipe/voila.jpg);
+}
+
+#voila a{
+    font-size: 18px;
+}
+
+.item-holder{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 30px 20px;
+    position: relative;
+    background-image: url(assets/menu.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-gap: 30px 30px;
+}
+
+.item{
+    display: grid;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: black;
+    backdrop-filter: blur(5px);
+    border: solid white 1px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all ease 0.3s;
+}
+
+.item:hover{
+    box-shadow: 2px 2px white;
+}
+
+.item img{
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    margin: auto;
+}
+
+.buy{
+    padding: 10px 10px;
+    background-color: white;
+    color: black;
+    margin-top: 15px;
+    border: solid white;
+    border-radius: 10px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.buy:hover{
+    background-color: black;
+    color: white;
+    border: solid white;
+}
